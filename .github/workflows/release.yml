@@ -1,4 +1,4 @@
-name: Python CD Release
+name: flask-cd-intro
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
         run: zip -r release.zip .
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v1
         with:
           name: flask-api-release
           path: release.zip
